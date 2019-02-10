@@ -95,3 +95,28 @@ $theme-blue:  #10828C;
     }
   }
 }
+
+// portfolio
+
+.portfolio {
+  margin: 4rem 0;
+  position: relative;
+
+  h1 {
+    color: $theme;
+    margin: 2rem;
+  }
+
+  .limited {
+    display: block;
+    height: 20rem;
+    width: 100%;
+    padding: 2rem 1rem;
+    overflow: hidden;
+  }
+
+  img {
+    margin: 0;
+    padding: 0;
+  }
+}
