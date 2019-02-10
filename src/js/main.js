@@ -1,2 +1,6 @@
-import '../../node_modules/bootstrap/dist/js/bootstrap.js';
-import '../../node_modules/jquery/dist/jquery.js';
+var setHeight = function(){
+  $('.header').height($(window).height());
+}
+
+$(document).ready(setHeight)
+window.onresize(setHeight)

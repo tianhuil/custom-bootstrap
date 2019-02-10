@@ -18,3 +18,44 @@ $primary: #F97300;
 .nav-link:hover {
   background: darken($primary, 5);
 }
+
+// header
+
+.header {
+  background-image: url('/images/headerback.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay{
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(244, 244, 244, 0.79);
+}
+
+.description {
+  position: absolute;
+  top: 30%;
+  margin: auto;
+  padding: 2rem;
+}
+
+.description h1 {
+  color: $primary;
+}
+
+.description p {
+  color: #666;
+  font-size: 20px;
+  width: 50%;
+  line-height: 1.5;
+}
+.description button {
+  border: 1px solid $primary;
+  background: $primary;
+  color: white;
+}
