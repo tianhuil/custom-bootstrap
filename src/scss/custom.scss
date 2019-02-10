@@ -7,16 +7,17 @@ $offwhite: #f4f4f4;
 $navbar-dark-color:                 rgba($white, .8);
 $navbar-dark-hover-color:           rgba($white, .9);
 $navbar-dark-active-color:          $white;
-$primary: #F97300;
+$theme:       #F97300;
+$theme-blue:  #10828C;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
 .navbar {
-  background: $primary;
+  background: $theme;
 }
 
 .nav-link:hover {
-  background: darken($primary, 5);
+  background: darken($theme, 5);
 }
 
 // header
@@ -45,7 +46,7 @@ $primary: #F97300;
 }
 
 .description h1 {
-  color: $primary;
+  color: $theme;
 }
 
 .description p {
@@ -55,7 +56,42 @@ $primary: #F97300;
   line-height: 1.5;
 }
 .description button {
-  border: 1px solid $primary;
-  background: $primary;
+  border: 1px solid $theme;
+  background: $theme;
   color: white;
+}
+
+// about
+
+.about {
+  margin: 4rem 0;
+  padding: 1rem;
+  position: relative;
+
+  h1 {
+    color: $theme;
+    margin: 2rem;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .caption {
+    display: block;
+    color: #888;
+  }
+  .desc {
+    padding: 2rem;
+    border-left: 4px solid $theme-blue;
+    h3 {
+      color: $theme-blue;
+    }
+    p {
+      line-height: 2;
+      color: #888;
+    }
+  }
 }
