@@ -11,6 +11,11 @@ $theme:       #F97300;
 $theme-blue:  #10828C;
 
 @import "node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html,h1,h2,h3,h4,h5,h6,a{
+ font-family: "Raleway", Helvetica, sans-serif;
+}
 
 .navbar {
   background: $theme;
@@ -118,5 +123,34 @@ $theme-blue:  #10828C;
   img {
     margin: 0;
     padding: 0;
+  }
+}
+
+// blog
+
+.blog {
+  margin: 4rem 0;
+  position: relative;
+
+  h1 {
+    color: $theme;
+    margin: 2rem;
+  }
+
+  .card {
+    box-shadow: 0 0 20px #ccc
+  }
+
+  .card-block {
+    padding: 1rem;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 12rem;
+  }
+
+  .card-title {
+    color: $theme;
   }
 }
