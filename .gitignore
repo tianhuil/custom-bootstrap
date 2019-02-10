@@ -79,5 +79,5 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
-# dynamically generated css
-css/
+# dynamically generated code
+out/

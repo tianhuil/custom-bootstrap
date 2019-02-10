@@ -6,17 +6,20 @@
   "dependencies": {
     "bootstrap": "^4.2.1",
     "jquery": "^3.3.1",
-    "live-server": "^1.2.1",
     "popper.js": "^1.14.7"
   },
   "devDependencies": {
-    "gulp": "^4.0.0",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.0.0",
     "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
     "gulp-watch": "^5.0.1",
+    "live-server": "^1.2.1",
     "node-sass": "^4.11.0"
   },
   "scripts": {
     "build": "gulp sass:watch",
-    "server": "live-server --ignore=.git/** --port=8081 ."
+    "server": "live-server --ignore=.git/** --port=8081 .",
+    "gulp": "gulp default"
   }
 }

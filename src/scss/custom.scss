@@ -1,0 +1,20 @@
+$nav-link-padding-y: 1rem;
+$navbar-padding-y: 0;
+$navbar-nav-link-padding-x: 2rem;
+
+$white:       #fff;
+$offwhite: #f4f4f4;
+$navbar-dark-color:                 rgba($white, .8);
+$navbar-dark-hover-color:           rgba($white, .9);
+$navbar-dark-active-color:          $white;
+$primary: #F97300;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.navbar {
+  background: $primary;
+}
+
+.nav-link:hover {
+  background: darken($primary, 5);
+}
