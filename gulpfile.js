@@ -12,11 +12,12 @@ sass.compiler = require('node-sass');
 gulp.task('sass', function () {
   return gulp.src('./src/scss/*.scss')
     .pipe(sourcemaps.init())
-    .pipe(
-      sass({
-        'onError': browserSync.notify
-      })
-    )
+    .pipe(sass())
+    .on('error', function (err) {
+        console.log(err.toString());
+        browserSync.notify(err);
+        this.emit('end');
+    })
     .pipe(sourcemaps.write('./src/out/maps'))
     .pipe(gulp.dest('./src/out/css'))
     .pipe(browserSync.stream());
